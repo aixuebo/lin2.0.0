@@ -894,6 +894,7 @@ abstract public class KylinConfigBase implements Serializable {
         return Integer.parseInt(getOptional("kylin.query.max-dimension-count-distinct", "5000000"));
     }
 
+    //存储自定义的udf函数
     public Map<String, String> getUDFs() {
         Map<String, String> udfMap = getPropertiesByPrefix("kylin.query.udf.");
         return udfMap;

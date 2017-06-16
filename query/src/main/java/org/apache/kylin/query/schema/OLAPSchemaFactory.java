@@ -141,6 +141,7 @@ public class OLAPSchemaFactory implements SchemaFactory {
         }
     }
 
+    //创建UDF函数,该函数的全路径就是在配置信息里面存储这
     private static void createOLAPSchemaFunctions(Writer out) throws IOException {
         Map<String, String> udfs = Maps.newHashMap();
         udfs.putAll(KylinConfig.getInstanceFromEnv().getUDFs());
